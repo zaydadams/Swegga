@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styling.css">
+<title>ORDER</title>
+
+</head>
+
+<body>
+<div id="page">
+	<div id="sidebar">
+		<img src="swegga.jpg" height="350px" width="150px">
+	</div>
+	<div id="banner">
+		<img src="delivery.gif" height="85px" width="300px">
+	</div>
+	<div id="navigation">
+		<img src="links.gif" usemap="#image-map" height="56px" width="560px" usemap="image-map">
+		 <map name="image-map">
+		 <area href="home.html" coords="10,5,96,35" shape="rect">
+		 <area href="services.html" coords="105,5,190,35" shape="rect">
+		 <area href="products.html" coords="205,5,300,35" shape="rect">
+		 <area href="orderStatus.html" coords="310,5,440,35" shape="rect">
+		 <area href="contactUs.html" coords="450,5,555,35" shape="rect">
+		</map>
+</div>
+
+<div id="main">
+	<form class="order">
+		<table>
+			<p class="caption">Product Summary</p>
+			<tr>
+				<td><b>Description</b></td>
+				<td><b>Size</b></td>
+				<td><b>Colour</b></td>
+				<td><b>Price</b></td>
+				<td><b>Quantity</b></td>
+				<td><b>Total</b></td>
+			</tr>
+			<tr>
+				<td><a href="female.html">Female ski jackets</a></td>
+				<td><select name="Sizes" size="1">
+					<option>small</option>
+					<option>medium</option>
+					<option>large</option>
+                    </select>
+				</td>
+				<td><select name="colors" size="1">
+					<option>Red</option>
+					<option>Pink</option>
+					<option>Black</option>
+					</select></td>
+				<td>150.95</td>
+				<td></td>
+				<td><readonly</td>
+			</tr>
+			<tr>
+				<td><a href="male.html">male ski jackets</a></td>
+				<td><select name="Sizes" size="1">
+					<option>small</option>
+					<option>medium</option>
+					<option>large</option>
+                    </select>
+				</td>
+				<td><select name="colors" size="1">
+					<option>Red</option>
+					<option>Blue</option>
+					<option>White</option>
+					</select></td>
+				<td>180.95</td>
+				<td></td>
+				<td><readonly</td>
+			</tr>
+			<tr>
+				<td colspan="4" span="4">Click to confirm and process your order</td>
+				<td><button type="button">Total Price</button></td>
+				<td><readonly></td>
+			</tr>
+				
+		</table>
+	</form>
+ </div>
+	<footer>&copy; 2014 Swegga Fashion-Moegamat Zayd Adams</footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
