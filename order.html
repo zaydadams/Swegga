@@ -20,18 +20,18 @@
 	<div id="navigation">
 		<img src="links.gif" usemap="#image-map" height="56px" width="560px" usemap="image-map">
 		 <map name="image-map">
-		 <area href="home.html" coords="10,5,96,35" shape="rect">
-		 <area href="services.html" coords="105,5,190,35" shape="rect">
-		 <area href="products.html" coords="205,5,300,35" shape="rect">
-		 <area href="orderStatus.html" coords="310,5,440,35" shape="rect">
-		 <area href="contactUs.html" coords="450,5,555,35" shape="rect">
+		 <area href="home.html" coords="10,5,96,47" shape="rect">
+		 <area href="services.html" coords="105,5,190,47" shape="rect">
+		 <area href="products.html" coords="205,5,300,47" shape="rect">
+		 <area href="orderStatus.html" coords="310,5,440,47" shape="rect">
+		 <area href="contactUs.html" coords="450,5,555,47" shape="rect">
 		</map>
 </div>
 
 <div id="main">
 	<form class="order">
 		<table>
-			<p class="caption">Product Summary</p>
+			<caption>Product Summary</caption>
 			<tr>
 				<td><b>Description</b></td>
 				<td><b>Size</b></td>
@@ -54,8 +54,8 @@
 					<option>Black</option>
 					</select></td>
 				<td>150.95</td>
-				<td></td>
-				<td><readonly</td>
+				<td><input type="text" name="" id="QtyF" style="width: 60px;"></td>
+				<td id="fdisp"></td>
 			</tr>
 			<tr>
 				<td><a href="male.html">male ski jackets</a></td>
@@ -71,19 +71,22 @@
 					<option>White</option>
 					</select></td>
 				<td>180.95</td>
-				<td></td>
-				<td><readonly</td>
+				<td><input type="text" name="" id="QtyM" style="width: 60px;"></td>
+				<td id="mdisp"> </td>
 			</tr>
 			<tr>
 				<td colspan="4" span="4">Click to confirm and process your order</td>
-				<td><button type="button">Total Price</button></td>
-				<td><readonly></td>
+				<td>
+					<button type="button" onclick="getGrandTotal()">Total Price</button>
+				</td>
+				<td id="total"></td>
 			</tr>
 				
 		</table>
 	</form>
  </div>
 	<footer>&copy; 2014 Swegga Fashion-Moegamat Zayd Adams</footer>
+
 </div>
 <script src="main.js"></script>
 </body>
